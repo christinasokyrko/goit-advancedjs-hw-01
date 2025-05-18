@@ -96,3 +96,5 @@ new SimpleLightbox('.gallery a', {
   captionDelay: 250,
   overlayOpacity: 0.9,
 });
+
+//smth
