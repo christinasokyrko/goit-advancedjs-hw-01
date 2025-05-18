@@ -7,7 +7,7 @@ import nodePolyfills from 'rollup-plugin-node-polyfills';
 
 export default defineConfig(() => {
   return {
-    base: '/vanilla-app-template/',
+    // base: '/vanilla-app-template/',
     define: {
       global: 'globalThis',
     },
