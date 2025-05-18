@@ -16,3 +16,129 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+.main-nav {
+  margin: 40px;
+}
+
+.main-nav li:hover {
+  color: black;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 24px;
+  list-style: none;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.gallery-item {
+  flex: 0 1 calc((100% - 48px) / 3);
+  overflow: hidden;
+}
+
+.gallery-link {
+  display: block;
+  text-decoration: none;
+}
+.gallery-link:hover {
+  cursor: url('../img/bxs_hand-down.png') 12 0, pointer;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.sl-overlay {
+  background: rgba(46, 47, 66, 0.8) !important;
+}
+
+.sl-counter {
+  color: rgba(255, 255, 255, 1) !important;
+  font-weight: bold;
+}
+
+.sl-navigation button {
+  color: rgba(255, 255, 255, 1) !important;
+  fill: rgba(255, 255, 255, 1) !important;
+  stroke: rgba(255, 255, 255, 1) !important;
+}
+
+.sl-close {
+  color: rgba(255, 255, 255, 1) !important;
+  fill: rgba(255, 255, 255, 1) !important;
+  stroke: rgba(255, 255, 255, 1) !important;
+}
+
+.sl-prev svg,
+.sl-next svg {
+  stroke: rgba(255, 255, 255, 1) !important;
+  fill: rgba(255, 255, 255, 1) !important;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 16px;
+  font-family: Arial, sans-serif;
+  margin: 40px;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: rgba(46, 47, 66, 1);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  color: rgba(46, 47, 66, 1);
+  margin-top: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: 1px solid rgba(128, 128, 128, 1);
+  border-radius: 4px;
+  resize: none;
+}
+
+.feedback-form button {
+  align-self: flex-start;
+  padding: 8px 16px;
+  background-color: rgba(78, 117, 255, 1);
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.feedback-form button:hover {
+  background-color: rgba(108, 140, 255, 1);
+}
+
+.feedback-form input:hover,
+.feedback-form textarea:hover {
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.feedback-form input:active,
+.feedback-form textarea:active {
+  border: 1px solid rgba(128, 128, 128, 1);
+}
